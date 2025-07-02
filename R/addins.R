@@ -70,18 +70,18 @@ tldr_prev_examples_addin <- function() {
 
 }
 
-tldr_prev_examples_item <- function(line) {
-  if (grepl("\u2022", line)) {
-    line <- substring(line, 3) # Remove bullet point and space
-    cli_h3(line)
-    # line <- paste0('cli::cli_h3("', line, '")')
-    # rstudioapi::sendToConsole(line, echo = FALSE, execute = TRUE, focus = FALSE)
-  } else {
-    cli_div()
-    line <- substring(line, 3) # Remove leading 2x spaces
-    rstudioapi::sendToConsole(line, execute = TRUE, focus = FALSE)
-  }
-}
+# tldr_prev_examples_item <- function(line) {
+#   if (grepl("\u2022", line)) {
+#     line <- substring(line, 3) # Remove bullet point and space
+#     cli_h3(line)
+#     # line <- paste0('cli::cli_h3("', line, '")')
+#     # rstudioapi::sendToConsole(line, echo = FALSE, execute = TRUE, focus = FALSE)
+#   } else {
+#     cli_div()
+#     line <- substring(line, 3) # Remove leading 2x spaces
+#     rstudioapi::sendToConsole(line, execute = TRUE, focus = FALSE)
+#   }
+# }
 
 tldr_input_addin <- function() {
 
@@ -92,6 +92,7 @@ tldr_input_addin <- function() {
   )
 
   rstudioapi::sendToConsole(paste0("tldr::tldr(", topic, ")"), execute = TRUE, focus = FALSE)
+  rstudioapi::sendToConsole(paste0("tldrPages::tldr(", topic, ")"), execute = TRUE, focus = FALSE)
 
 }
 
