@@ -5,14 +5,14 @@
 
 <!-- badges: start -->
 
-<!-- [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version-ago/tldr)](https://cran.r-project.org/package=tldr) -->
+<!-- [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version-ago/tldrPages)](https://cran.r-project.org/package=tldrPages) -->
 
-[![Lifecycle:Experimental](https://img.shields.io/badge/Lifecycle-Experimental-339999)](Redirect-URL)
+![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)
 <!-- badges: end -->
 
 The goal of **tldrPages** is to provide short-form documentation in the
 console, styled with
-<a href = "https://github.com/r-lib/cli">**cli**</a>:
+<a href = "https://www.github.com/r-lib/cli">**cli**</a>:
 
 <figure>
 <img src="man/README-gifs/tldr-tldr.gif" alt="tldr-ex-1" />
@@ -33,7 +33,7 @@ a project which provides simpler documentation for command-line tools.
 ## Installation
 
 If you are interested in installing **tldrPages** you can install the
-development version from [GitHub](https://github.com/) with:
+development version from [GitHub](https://www.github.com/) with:
 
 ``` r
 # install.packages("remotes")
@@ -44,7 +44,7 @@ remotes::install_github("jamesotto852/tldrPages")
 
 We have provided documentation for for commonly used functions included
 in the base distribution of R in
-<a href="https://Github.com/jamesotto852/tldrDocs">**tldrDocs**</a>,
+<a href="https://www.github.com/jamesotto852/tldrDocs">**tldrDocs**</a>,
 which you can install via:
 
 ``` r
@@ -60,7 +60,7 @@ and `@exampletldr`. Once the system for documentation is more stable, we
 will be writing a guide on its use for other developers. For an example
 of what a package with **tldrPages**-style documentation looks like,
 there is another package:
-<a href="https://Github.com/jamesotto852/tldrExample">**tldrExample**</a>,
+<a href="https://www.github.com/jamesotto852/tldrExample">**tldrExample**</a>,
 which exports several simple objects with Roxygen skeletons that produce
 **tldrPages** documentation.
 

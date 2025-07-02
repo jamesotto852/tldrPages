@@ -16,11 +16,11 @@ knitr::opts_chunk$set(
 # tldrPages <img src="man/figures/logo.png"  align="right"  width="120" style="padding-left:10px;background-color:white;" />
 
 <!-- badges: start -->
-<!-- [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version-ago/tldr)](https://cran.r-project.org/package=tldr) -->
-[![Lifecycle:Experimental](https://img.shields.io/badge/Lifecycle-Experimental-339999)](<Redirect-URL>)
+<!-- [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version-ago/tldrPages)](https://cran.r-project.org/package=tldrPages) -->
+![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)
 <!-- badges: end -->
 
-The goal of **tldrPages** is to provide short-form documentation in the console, styled with <a href = "https://github.com/r-lib/cli">**cli**</a>:
+The goal of **tldrPages** is to provide short-form documentation in the console, styled with <a href = "https://www.github.com/r-lib/cli">**cli**</a>:
 
 ![tldr-ex-1](man/README-gifs/tldr-tldr.gif)
 
@@ -34,7 +34,7 @@ a project which provides simpler documentation for command-line tools.
 
 ## Installation
 
-If you are interested in installing **tldrPages** you can install the development version from [GitHub](https://github.com/) with:
+If you are interested in installing **tldrPages** you can install the development version from [GitHub](https://www.github.com/) with:
 
 ``` r
 # install.packages("remotes")
@@ -43,7 +43,7 @@ remotes::install_github("jamesotto852/tldrPages")
 
 ## **tldrPages** documentation for objects in base R
 
-We have provided documentation for for commonly used functions included in the base distribution of R in <a href="https://Github.com/jamesotto852/tldrDocs">**tldrDocs**</a>, which you can install via: 
+We have provided documentation for for commonly used functions included in the base distribution of R in <a href="https://www.github.com/jamesotto852/tldrDocs">**tldrDocs**</a>, which you can install via: 
 
 ``` r
 remotes::install_github("jamesotto852/tldrDocs")
@@ -55,7 +55,7 @@ This package includes a Roxygen2 extension which allows for the creation of **tl
 This is done via `tldr_roclet()` and custom Roxygen tags such as `@paramtldr` and `@exampletldr`.
 Once the system for documentation is more stable, we will be writing a guide on its use for other developers.
 For an example of what a package with **tldrPages**-style documentation looks like,
-there is another package: <a href="https://Github.com/jamesotto852/tldrExample">**tldrExample**</a>, 
+there is another package: <a href="https://www.github.com/jamesotto852/tldrExample">**tldrExample**</a>, 
 which exports several simple objects with Roxygen skeletons that produce **tldrPages** documentation.
 
 ## How it works
