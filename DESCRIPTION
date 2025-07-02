@@ -1,5 +1,5 @@
 Package: tldrPages
-Title: Short form documentation in console output
+Title: Short Form Documentation in Console Output
 Version: 0.0.1
 Authors@R: 
     c(person(given = "James",
@@ -12,7 +12,12 @@ Authors@R:
            role = c("aut"),
            email = "david@kahle.io",
            comment = c(ORCID = "0000-0002-9999-1558")))
-Description: What the package does (one paragraph).
+Description: 
+    Tools for rendering and authoring short-form documentation. 
+    The exported 'tldr()' function is an interface for an alternative
+    form of documentation, supplementing the standard '?()' and 'help()' functions.
+    Also included is the tldr roclet and associated tags, extending 'roxygen2'
+    to enable package developer's authoring of 'tldrPages'-compatible documentation.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
