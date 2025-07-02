@@ -62,6 +62,12 @@ tldr_help <- function(topic, package) {
 
   # If package is a base package, need to instead look at tldrDocs:
   if (package_parsed %in% c("base", "methods", "datasets", "utils", "grDevices", "graphics", "stats")) {
+    if (!"tldrDocs" %in% rownames(installed.packages())) {
+      cli_abort(c(
+        "Documentation for base package ({.pkg {package_parsed}}) requested but {.pkg tldrDocs} not installed.",
+        "Run {.code install.packages(\"tldrDocs\")} for tldr-style documentation of functions exported in base R."
+      ))
+    }
     package_parsed <- "tldrDocs"
   }
 

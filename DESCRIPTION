@@ -24,3 +24,5 @@ Imports:
     rstudioapi,
     roxygen2,
     utils
+Suggests:
+    tldrDocs
