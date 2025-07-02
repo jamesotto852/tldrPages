@@ -1,39 +1,46 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# tldr <img src="man/figures/logo.png"  align="right"  width="120" style="padding-left:10px;background-color:white;" />
+# tldrPages <img src="man/figures/logo.png"  align="right"  width="120" style="padding-left:10px;background-color:white;" />
 
 <!-- badges: start -->
+
 <!-- [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version-ago/tldr)](https://cran.r-project.org/package=tldr) -->
 
 [![Lifecycle:Experimental](https://img.shields.io/badge/Lifecycle-Experimental-339999)](Redirect-URL)
 <!-- badges: end -->
 
-The goal of **tldr** is to provide short-form documentation in the
+The goal of **tldrPages** is to provide short-form documentation in the
 console, styled with
 <a href = "https://github.com/r-lib/cli">**cli**</a>:
 
-![tldr-ex-1](man/README-gifs/tldr-tldr.gif)
+<figure>
+<img src="man/README-gifs/tldr-tldr.gif" alt="tldr-ex-1" />
+<figcaption aria-hidden="true">tldr-ex-1</figcaption>
+</figure>
 
 Included are RStudio addins which, when bound to keyboard shortcuts,
-facilitate efficient access to **tldr** documentation:
+facilitate efficient access to **tldrPages** documentation:
 
-![tldr-ex-2](man/README-gifs/tldrExample-divide.gif)
+<figure>
+<img src="man/README-gifs/tldrExample-divide.gif" alt="tldr-ex-2" />
+<figcaption aria-hidden="true">tldr-ex-2</figcaption>
+</figure>
 
-**tldr** is inspired by <a href="https://tldr.sh/">tldr-pages</a>, a
-project which provides simpler documentation for command-line tools.
+**tldrPages** is inspired by <a href="https://tldr.sh/">tldr-pages</a>,
+a project which provides simpler documentation for command-line tools.
 
 ## Installation
 
-If you are interested in installing **tldr** you can install the
+If you are interested in installing **tldrPages** you can install the
 development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("jamesotto852/tldr")
+remotes::install_github("jamesotto852/tldrPages")
 ```
 
-## **tldr** documentation for objects in base R
+## **tldrPages** documentation for objects in base R
 
 We have provided documentation for for commonly used functions included
 in the base distribution of R in
@@ -44,18 +51,18 @@ which you can install via:
 remotes::install_github("jamesotto852/tldrDocs")
 ```
 
-## Writing **tldr** documentation
+## Writing **tldrPages** documentation
 
 This package includes a Roxygen2 extension which allows for the creation
-of **tldr** documentation files from Roxygen skeletons. This is done via
-`tldr_roclet()` and custom Roxygen tags such as `@paramtldr` and
-`@exampletldr`. Once the system for documentation is more stable, we
+of **tldrPages** documentation files from Roxygen skeletons. This is
+done via `tldr_roclet()` and custom Roxygen tags such as `@paramtldr`
+and `@exampletldr`. Once the system for documentation is more stable, we
 will be writing a guide on its use for other developers. For an example
-of what a package with **tldr**-style documentation looks like, there is
-another package:
+of what a package with **tldrPages**-style documentation looks like,
+there is another package:
 <a href="https://Github.com/jamesotto852/tldrExample">**tldrExample**</a>,
 which exports several simple objects with Roxygen skeletons that produce
-**tldr** documentation.
+**tldrPages** documentation.
 
 ## How it works
 
