@@ -8,9 +8,9 @@
 }
 
 \details{
-Several ways to bring up documentation on \dfn{tldr::tldr}:
+Several ways to bring up documentation on \dfn{tldrPages::tldr}:
 \code{tldr(tldr)}
 \code{tldr('tldr')}
-\code{tldr(tldr::tldr)}
+\code{tldr(tldrPages::tldr)}
 }
 

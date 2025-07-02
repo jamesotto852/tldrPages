@@ -5,10 +5,10 @@
 #' @param topic A name or character string specifying documentation topic
 #' @paramtldr topic A name or character string specifying documentation topic
 #'
-#' @exampletldr Several ways to bring up documentation on \dfn{tldr::tldr}:
+#' @exampletldr Several ways to bring up documentation on \dfn{tldrPages::tldr}:
 #' \code{tldr(tldr)}
 #' \code{tldr('tldr')}
-#' \code{tldr(tldr::tldr)}
+#' \code{tldr(tldrPages::tldr)}
 #'
 #' @export
 #'
