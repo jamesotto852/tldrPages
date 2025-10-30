@@ -1,19 +1,17 @@
-#' Roxygen2 extensions
+#' Roclet: make tldr files
 #'
-#' roxygen2 extension code facilitating documenting via roxygen2::roxygenize(roclets = c("tldr_roclet"))
+#' This roclet is the workhorse of tldrPages, producing the .Rd files
+#' that `tldr()` uses to render documentation in the R console.
+#'
+#' Generally, you will not call these functions directly but will instead use
+#' `roxygenise()`, specifying the tldr roclet via the `roclets` argument.
 #'
 #' @name tldr_roclet
 #' @rdname tldr_roclet
 #' @param ... Additional arguments
+#' @returns Objects specifying the functionality of the tldr roclet
 #' @ignoretldr
 NULL
-# Right now, all files exported under same topic: "tldr_roclet"
-# probably not the right thing to do
-
-
-
-# Helper fun
-
 
 
 # Special handling of tldr tags:
@@ -235,6 +233,7 @@ format.rd_section_ignoretldr <- function(x, ...) {
   # roclet_output() avoids writing files w/ this tag in their contents
   "\\ignoretldr\n"
 }
+
 
 
 # Set up tldr_roclet

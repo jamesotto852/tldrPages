@@ -5,7 +5,7 @@ Authors@R:
     c(person(given = "James",
            family = "Otto",
            role = c("aut", "cre"),
-           email = "james_otto@baylor.edu",
+           email = "jamesotto852@gmail.com",
            comment = c(ORCID = "0000-0002-0665-2515")),
       person(given = "David",
            family = "Kahle",
@@ -13,9 +13,9 @@ Authors@R:
            email = "david@kahle.io",
            comment = c(ORCID = "0000-0002-9999-1558")))
 Description: 
-    Tools for rendering and authoring short-form documentation. 
-    The exported 'tldr()' function is an interface for an alternative
-    form of documentation, supplementing the standard '?()' and 'help()' functions.
+    Rendering and authoring short-form documentation. 
+    The exported tldr() function is an interface for an alternative
+    form of documentation, supplementing the standard ?() and help() functions.
     Also included is the tldr roclet and associated tags, extending 'roxygen2'
     to enable package developer's authoring of 'tldrPages'-compatible documentation.
 License: MIT + file LICENSE

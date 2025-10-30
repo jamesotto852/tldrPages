@@ -9,6 +9,9 @@ tldr(topic)
 \arguments{
 \item{topic}{A name or character string specifying documentation topic}
 }
+\value{
+No return value, called to print documentation to console
+}
 \description{
 Similar to \verb{?} and \code{help()}
 }

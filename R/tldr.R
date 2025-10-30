@@ -10,6 +10,8 @@
 #' \code{tldr('tldr')}
 #' \code{tldr(tldrPages::tldr)}
 #'
+#' @returns No return value, called to print documentation to console
+#'
 #' @export
 #'
 #' @examples
@@ -68,7 +70,7 @@ tldr_help <- function(topic, package) {
 
   }
 
-  if (package_parsed == "tldrDocs" & !"tldrDocs" %in% rownames(utils::installed.packages())) {
+  if (package_parsed == "tldrDocs" & length(find.package("tldrDocs")) == 0L) {
     cli_abort(c(
       "Documentation for base package ({.pkg {package_parsed}}) requested but {.pkg tldrDocs} not installed.",
       "{.code install.packages(\"tldrDocs\")} for tldr-style documentation of select functions exported in base R."

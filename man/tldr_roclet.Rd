@@ -24,7 +24,7 @@
 \alias{roclet_process.roclet_tldr}
 \alias{roclet_clean.roclet_tldr}
 \alias{roclet_output.roclet_tldr}
-\title{Roxygen2 extensions}
+\title{Roclet: make tldr files}
 \usage{
 roxy_tag_rd_tldr(x, base_path, env)
 
@@ -89,6 +89,14 @@ tldr_roclet()
 
 \item{is_first}{Has roclet_output written files before}
 }
+\value{
+Objects specifying the functionality of the tldr roclet
+}
 \description{
-roxygen2 extension code facilitating documenting via roxygen2::roxygenize(roclets = c("tldr_roclet"))
+This roclet is the workhorse of tldrPages, producing the .Rd files
+that \code{tldr()} uses to render documentation in the R console.
+}
+\details{
+Generally, you will not call these functions directly but will instead use
+\code{roxygenise()}, specifying the tldr roclet via the \code{roclets} argument.
 }
